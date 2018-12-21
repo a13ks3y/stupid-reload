@@ -1,0 +1,26 @@
+ {
+  "name": "stupid-reload",
+  "version": "1.0.0",
+  "description": "This is just stupid.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"I'm sorry :(\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a13ks3y/stupid-reload.git"
+  },
+  "keywords": [
+    "stupid",
+    "reload",
+    "livereload",
+    "stupid-livereload",
+    "browser"
+  ],
+  "author": "a13ks3y.ass@gmail.com",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/a13ks3y/stupid-reload/issues"
+  },
+  "homepage": "https://github.com/a13ks3y/stupid-reload#readme"
+}
