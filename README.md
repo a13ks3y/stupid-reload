@@ -2,14 +2,17 @@
 This is just stupid.
 
 ## Description
-Reloads the page every 0xfff milliseconds (4 seconds) by default, 
+Reloads the page every 0xfff milliseconds (~4 seconds) by default, 
 if "live=true" string is presented in the hash url 
 `````
 http://example.com/index.html#live=true
 `````
-    
-Checks the __config.js__ file each 0xfff * 2 milliseconds
-(8 seconds) by default.
+Could be turned off
+if double-click somewhere on the page.
+Hopefully will make it configurable, so you can change the event type
+and probably some condition or arrow function as an option (for keyboard events),
+or maybe just custom events like ```onKeyAPressed``` for example.
+
 
 ## Installation & Usage
 ### Warning! This section is not complete!
