@@ -21,10 +21,11 @@
     window.stupidReloadConfig = Object.assign(window.stupidReloadConfig || {}, {
         hashParameterCheckString: "live=true",
         reloadTimeout: 0xfff,
+        forceReload: false
     }, getConfigFromScriptTagAttribute());
 
     const checkHashAndReload =
-        () => location.hash.search(stupidReloadConfig.hashParameterCheckString) !== -1 &&
+        () => (stupidReloadConfig.forceReload || location.hash.search(stupidReloadConfig.hashParameterCheckString) !== -1) &&
             (
                 checkHashAndReload.reloadTimerHandle =
                 setTimeout(location.reload.bind(location, [true]), stupidReloadConfig.reloadTimeout)
